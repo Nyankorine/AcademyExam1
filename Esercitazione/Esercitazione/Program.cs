@@ -1,5 +1,6 @@
 ﻿using System;
 using Esercitazione.Procedures;
+using Esercitazione.Utils;
 
 namespace Esercitazione
 {
@@ -16,7 +17,7 @@ namespace Esercitazione
          Console.WriteLine("**************************");
          Console.WriteLine("***   ESERCITAZIONE    ***");
          Console.WriteLine("**************************");
-         FunzioniProdotto.InserisciNumProdottiEMostra();                        
+         FunzioniProdotto.InserisciNumProdottiEMostra();
         }
     }
 }

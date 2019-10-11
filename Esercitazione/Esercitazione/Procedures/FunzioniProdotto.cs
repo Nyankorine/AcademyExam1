@@ -29,6 +29,8 @@ namespace Esercitazione.Procedures
 
             //Itero l'elenco e stampo a video
             StampaProdotti(elencoprodotti);
+            string Path = FunzioniFileSystem.CreaStrutturaPerConservazioniDati(elencoprodotti);
+            FunzioniFileSystem.LeggiStrutturaDaFileDati(Path);
 
             //Cerimonia finale
             ConsoleUtils.ConfermaUscita();
@@ -62,7 +64,8 @@ namespace Esercitazione.Procedures
             };
 
             elenco[index] = prod;
-            FunzioniFileSystem.CreaStrutturaPerConservazioniDati(elenco,index);
+            string Path = FunzioniFileSystem.CreaStrutturaPerConservazioniDati(elenco);
+            FunzioniFileSystem.ScritturaSuFileDati(Path,elenco,index);
         }
     }
 }
